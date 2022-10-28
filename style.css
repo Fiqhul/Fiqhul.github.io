@@ -1,0 +1,76 @@
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: rgb(176, 176, 176);
+    color: #333;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.header {
+    padding: 15px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: aqua;
+    padding: 5px;
+}
+
+.header a:hover {
+    background-color: dodgerblue;
+    color: rgb(170, 170, 170);
+}
+
+.poster {
+    height: 250px;
+    background-image: url(img/img.jpg);
+    background-size: cover;
+    background-position: 0 -150px;
+    border-top: 5px solid aqua;
+    border-bottom: 5px solid aqua;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content .penulis a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #333;
+}
+
+.footer .copy {
+    color: azure;
+    text-align: center;
+    padding: 10px;
+}
