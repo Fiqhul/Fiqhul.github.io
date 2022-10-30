@@ -1,13 +1,30 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.cf {
+    *zoom: 1;
+}
+
+
 body {
     font: 16px/28px arial, sans-serif;
-    background-color: rgb(176, 176, 176);
+    background-image: url(img/background.jpg);
     color: #333;
+    background-size: cover;
 }
 
 .container {
-    width: 800px;
+    width: 960px;
     margin: auto;
-    background-color: #fff;
+    background-color: rgb(194, 194, 194);
 }
 
 .header {
@@ -28,41 +45,100 @@ body {
 
 .header a {
     text-decoration: none;
-    color: aqua;
-    padding: 5px;
+    color: white;
+    padding: 7px;
+    text-transform: capitalize;
 }
 
 .header a:hover {
-    background-color: dodgerblue;
-    color: rgb(170, 170, 170);
+    transition-duration: 2s;
+    color: rgb(0, 222, 222);
+}
+
+.active {
+    background-color: rgb(0, 222, 222);
+    padding: 7px;
+    color: white;
+}
+
+.active:hover {
+    color:white !important;
 }
 
 .poster {
-    height: 250px;
+    height: 300px;
     background-image: url(img/img.jpg);
     background-size: cover;
     background-position: 0 -150px;
-    border-top: 5px solid aqua;
-    border-bottom: 5px solid aqua;
+    border-top: 5px solid rgb(0, 222, 222);
+    border-bottom: 5px solid rgb(0, 222, 222);
 }
 
-.content {
+.main {
     padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
 }
 
-.content h2 {
+.main h2 {
     font-size: 20px;
     font-weight: bold;
 }
 
-.content .penulis a {
+.main .penulis a {
     text-decoration: none;
-    color: aqua;
+    color: rgb(0, 200, 200);
 }
 
-.content p {
+.main p {
     margin-bottom: 20px;
     font-size: 14px;
+}
+
+.side {
+    width: 300px;
+    padding: 20px;
+    float: right;
+}
+
+.side h3 {
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+}
+
+.profile {
+    background-image: url(img/afiq.jpg);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 7px;
+    box-shadow: 0px 0px 4px 4px rgb(167, 167, 167);
+}
+
+.profile:hover {
+    transition-duration: 2s;
+    background-image: url(img/afiq.jpg);
+    height: 125px;
+    width: 125px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 7px;
+    box-shadow: 0px 0px 4px 4px rgb(167, 167, 167);
+}
+
+.diri {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.wpu {
+    text-decoration: none;
+    color: #bb7ec0;
 }
 
 .footer {
@@ -70,7 +146,8 @@ body {
 }
 
 .footer .copy {
-    color: azure;
+    color: rgb(208, 208, 208);
     text-align: center;
     padding: 10px;
+    text-transform: capitalize;
 }
