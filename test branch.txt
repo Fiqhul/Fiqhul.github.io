@@ -1,5 +1,5 @@
 ini adalah pembelajaran fitur branch di github
 saya akan membuat list sederhana di sini
-- nama
-- alamat
-- tempat tanggal lahir
+- nama : fiqhul akbar
+- alamat : kendal
+- tempat tanggal lahir : 1999
